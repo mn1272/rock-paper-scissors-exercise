@@ -2,7 +2,9 @@ print("welcome to rock paper scissors game")
 
 # user inputs
 
-
+you = input("please make a selection ('rock','paper','scissors'):")
+## print ("you chose:", you)
+print (f"you chose: '{you}' ")
 
 # valid user inputs
 
