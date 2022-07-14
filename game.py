@@ -1,10 +1,10 @@
 import random
 
-print("welcome to rock paper scissors game")
+print("Welcome 'Plaayer One' to my Rock Paper Scissors Game.....")
 
 # user inputs
 
-you = input("please make a selection ('rock','paper','scissors'):")
+you = input("Please choose either ('rock','paper','scissors'):")
 you = you.lower()
 ## print ("you chose:", you)
 print (f"you chose: '{you}' ")
@@ -24,21 +24,21 @@ if you not in valid_options:
 # import random
 
 
-print("Computer Chose:", computer_choice)
+print (f"Computer Chose:: '{computer_choice}' ")
 
 
 # determine the winner, code adapted from shared in slack by Bonnie
 
 if you == computer_choice: print("It's a tie!")
 elif you == "rock": 
-    if computer_choice == "scissors": print("Rock crushes scissors. You win!")
-    else: print("Paper covers rock. You lose!")
+    if computer_choice == "scissors": print("Rock crushes scissors. You win! Thanks for playing. Please play again!")
+    else: print("Paper covers rock. You lose! Thanks for playing. Please play again!")
 elif you == "paper":
-    if computer_choice == "rock": print ("Paper covers rock. You win!")
-    else: print("Scissors cuts paper. You lose!")
+    if computer_choice == "rock": print ("Paper covers rock. You win! Thanks for playing. Please play again!")
+    else: print("Scissors cuts paper. You lose! Thanks for playing. Please play again!")
 elif you == "scissors":
-    if computer_choice == "paper": print ("Scissors cuts paper. You lose!")
-    else: print("Rock crushes scissors. You lose!")
+    if computer_choice == "paper": print ("Scissors cuts paper. You win! Thanks for playing. Please play again!")
+    else: print("Rock crushes scissors. You lose! Thanks for playing. Please play again!")
 
 
 
