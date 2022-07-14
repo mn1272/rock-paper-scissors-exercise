@@ -5,12 +5,17 @@ print("welcome to rock paper scissors game")
 # user inputs
 
 you = input("please make a selection ('rock','paper','scissors'):")
+you = you.lower()
 ## print ("you chose:", you)
 print (f"you chose: '{you}' ")
 
 # valid user inputs
-
-
+valid_options = ["rock","paper","scissors"]
+computer_choice = random.choice(valid_options)
+#breakpoint()
+if you not in valid_options: 
+    print("Oops Invalid Try Again") 
+    exit()
 
 # computer choice
 
@@ -18,8 +23,7 @@ print (f"you chose: '{you}' ")
 
 # import random
 
-valid_options = ["rock","paper","scissors"]
-computer_choice = random.choice(valid_options)
+
 print("Computer Chose:", computer_choice)
 
 
