@@ -17,15 +17,24 @@ print (f"you chose: '{you}' ")
 
 
 # import random
+
 valid_options = ["rock","paper","scissors"]
 computer_choice = random.choice(valid_options)
 print("Computer Chose:", computer_choice)
 
 
+# determine the winner, code adapted from shared in slack by Bonnie
 
-
-# determine the winner
-
+if you == computer_choice: print("It's a tie!")
+elif you == "rock": 
+    if computer_choice == "scissors": print("Rock crushes scissors. You win!")
+    else: print("Paper covers rock. You lose!")
+elif you == "paper":
+    if computer_choice == "rock": print ("Paper covers rock. You win!")
+    else: print("Scissors cuts paper. You lose!")
+elif you == "scissors":
+    if computer_choice == "paper": print ("Scissors cuts paper. You lose!")
+    else: print("Rock crushes scissors. You lose!")
 
 
 
