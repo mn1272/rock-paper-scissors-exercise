@@ -1,3 +1,5 @@
+import random
+
 print("welcome to rock paper scissors game")
 
 # user inputs
@@ -11,6 +13,14 @@ print (f"you chose: '{you}' ")
 
 
 # computer choice
+
+
+
+# import random
+valid_options = ["rock","paper","scissors"]
+computer_choice = random.choice(valid_options)
+print("Computer Chose:", computer_choice)
+
 
 
 
