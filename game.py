@@ -1,6 +1,6 @@
 import random
 
-print("Welcome 'Plaayer One' to my Rock Paper Scissors Game.....")
+print("Welcome 'Player One' to my Rock Paper Scissors Game.....")
 
 # user inputs
 
